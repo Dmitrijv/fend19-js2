@@ -1,22 +1,33 @@
 /*
-
     Övning i små grupper –Skapa en enkel inköpslista
-
 */
+
+
+const submitButton = $('#newItemSubmit');
+//submitButton.addEventListener("click", addItemToBasket);
+submitButton.bind('click', addItemToBasket);
+
+const inputField = $('#newItemInput');
+function addItemToBasket() {
+
+    const itemName = inputField.val();
+    if (itemName === "" || !itemName)
+        return
+
+    const payload = " <tr> <td> " + itemName + "</td> </tr >";
+    shoppingBasket.append(payload);
+    inputField.val('');
+}
 
 
 let shoppingBasket = $('#basket-table-body');
 
 $(document).ready(function () {
-
-    shoppingBasket.append("<li>End</li>");
-
+    console.log("Hello World");
 });
 
 
 
 
-let inputField = $('#newItemInput');
-let submitButton = $('#newItemSubmit');
 
 

@@ -70,6 +70,12 @@ table.todo {
     border-bottom: 1px solid white;
 }
 
+h1 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
 .borderedBox {
     margin: 10px;
     display: inline-block;
