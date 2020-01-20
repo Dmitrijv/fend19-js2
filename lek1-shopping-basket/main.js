@@ -8,11 +8,15 @@
 let shoppingBasket = $('#basket-table-body');
 
 $(document).ready(function () {
-    console.log(shoppingBasket.toArray());
+
+    shoppingBasket.append("<li>End</li>");
+
 });
 
 
-let submitButton = $('#basket-table-body');
 
 
-// $("ul").append("<li>End</li>");
+let inputField = $('#newItemInput');
+let submitButton = $('#newItemSubmit');
+
+
