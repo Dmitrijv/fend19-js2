@@ -5,3 +5,14 @@
 */
 
 
+let shoppingBasket = $('#basket-table-body');
+
+$(document).ready(function () {
+    console.log(shoppingBasket.toArray());
+});
+
+
+let submitButton = $('#basket-table-body');
+
+
+// $("ul").append("<li>End</li>");
