@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dmitrijv - To Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="header">
+            <h3>JavaScript 2 - Assignment 1, Inköpslista</h3>
+            <p>Dmitrij Velström, Nackademin</p>
+            <p>2020-01-20</p>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="listContainer">
+            <div class="borderedBox">
+                <p><b>Vad vill du handla idag?</b></p>
+                <input class="borderWhite" type="text" id="newTaskInput">
+                <input type="submit" for="newTaskInput" value="Lägg till" id="newTaskSubmit">
+            </div>
+        </div>
+
+        <table class="todo" id="todo-table">
+            <thead>
+                <tr>
+                    <th>Shopping basket</th>
+                </tr>
+            </thead>
+            <tbody id="todo-table-body">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script type="application/javascript" src="main.js"></script>
+
+</body>
+
+</html>
