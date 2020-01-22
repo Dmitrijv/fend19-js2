@@ -4,7 +4,6 @@
 
 
 const submitButton = $('#newItemSubmit');
-//submitButton.addEventListener("click", addItemToBasket);
 submitButton.bind('click', addItemToBasket);
 
 const inputField = $('#newItemInput');
@@ -12,7 +11,7 @@ function addItemToBasket() {
 
     const itemName = inputField.val();
     if (itemName === "" || !itemName)
-        return
+        return;
 
     const payload = " <tr> <td> " + itemName + "</td> </tr >";
     shoppingBasket.append(payload);
