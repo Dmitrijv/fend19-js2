@@ -8,7 +8,8 @@ function Point2D(x, y) {
   };
 }
 
-let pointA = new Point2D(1, 2);
-let pointB = new Point2D(5, 33);
+const pointA = new Point2D(1, 2);
+const pointB = new Point2D(5, 33);
+const distance = pointA.distanceToPoint(pointB).toFixed(2);
 
-console.log(pointA.distanceToPoint(pointB).toFixed(2));
+console.log(distance);
